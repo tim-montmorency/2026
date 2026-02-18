@@ -1,32 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="Exposition ">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Exposition " />
     <title>Site Web de l'exposition du cours 582-601 Expérience multimédia en techniques d'intégration multimédia du Collège Montmorency</title>
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:title" content="Titre du projet">
-    <meta property="og:description" content="Site Web de l'exposition du cours 582-601 Expérience multimédia en techniques d'intégration multimédia du Collège Montmorency">
-    <meta property="og:image" content="https://tim-montmorency.com/public/img/tim-og.jpg">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Titre du projet" />
+    <meta property="og:description" content="Site Web de l'exposition du cours 582-601 Expérience multimédia en techniques d'intégration multimédia du Collège Montmorency" />
+    <meta property="og:image" content="https://tim-montmorency.com/public/img/tim-og.jpg" />
     <meta property="og:image:width" content="1920" />
     <meta property="og:image:height" content="1008" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@^5.0.0-rc/dist/themes/core.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@^5.0.0-rc/dist/themes/core.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
+  <body>
+    <div id="app"></div>
 
-<body>
-Site Web de l'exposition du cours 582-601 Expérience multimédia en techniques d'intégration multimédia du Collège Montmorency
+    <script>
+      window.$docsify = {
+        hideSidebar: true, // Configurable when publishing
+        name: "",
+        auto2top: true,
+        loadSidebar: false, // Enable sidebar loading
+        subMaxLevel: 4, // Adjust the level to include in TOC
+        relativePath: true, // relative path enable
+      };
+    </script>
 
-</body>
-
+    <!-- Required -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+    <script src="https://gllmar.github.io/docsify-img-caption/docsify-img-caption.js"></script>
+    <script src="https://gllmar.github.io/docsify-img-grid/docsify-img-grid.js"></script>
+  </body>
 </html>
