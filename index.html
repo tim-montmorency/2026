@@ -2,8 +2,10 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover" />
     <meta name="description" content="Exposition " />
-    <title>Site Web de l'exposition du cours 582-601 Expérience multimédia en techniques d'intégration multimédia du Collège Montmorency</title>
+    <title>Réseau Vivant - 2026</title>
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -19,27 +21,49 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
     <link rel="manifest" href="favicon/site.webmanifest" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@^5.0.0-rc/dist/themes/core.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div id="app"></div>
+    <main>
+      <h1>Réseau Vivant</h1>
+      <h2>Projets étudiants</h2>
 
-    <script>
-      window.$docsify = {
-        hideSidebar: true, // Configurable when publishing
-        name: "",
-        auto2top: true,
-        loadSidebar: false, // Enable sidebar loading
-        subMaxLevel: 4, // Adjust the level to include in TOC
-        relativePath: true, // relative path enable
-      };
-    </script>
+      <div class="projects-grid">
+        <a href="https://pythons-5.github.io/Terminal/#/" class="project-card">
+          <img src="./medias/logo_terminal.png" alt="Terminal" />
+          <p>Terminal</p>
+        </a>
 
-    <!-- Required -->
-    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-    <script src="https://gllmar.github.io/docsify-img-caption/docsify-img-caption.js"></script>
-    <script src="https://gllmar.github.io/docsify-img-grid/docsify-img-grid.js"></script>
+        <a href="https://deux-intelligence.github.io/deux-neurones/#/" class="project-card">
+          <img src="./medias/logo_oceanrouge.jpg" alt="Océan Rouge" />
+          <p>Océan Rouge</p>
+        </a>
+
+        <a href="https://emersiaa.github.io/Quand-les-yeux-se-croisent/#/" class="project-card">
+          <img src="./medias/logo_yeux.png" alt="Quand les yeux se croisent" />
+          <p>Quand les yeux se croisent</p>
+        </a>
+
+        <a href="https://o-i-g-n-o-n.github.io/Mission-decollage/#/" class="project-card">
+          <img src="./medias/logo_oignon.png" alt="Mission Décollage" />
+          <p>Mission Décollage</p>
+        </a>
+
+        <a href="https://mammouths.github.io/projet/#/" class="project-card">
+          <img src="./medias/logo_arbre.webp" alt="Arbre-en-face" />
+          <p>Arbre-en-face</p>
+        </a>
+
+        <a href="https://les-chimistes.github.io/symbiose/#/" class="project-card">
+          <img src="./medias/logo_symbiose.webp" alt="Symbiose" />
+          <p>Symbiose</p>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <p>© Collège Montmorency | TIM Montmorency 2026</p>
+    </footer>
   </body>
 </html>
