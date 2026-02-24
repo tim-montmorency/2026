@@ -83,3 +83,9 @@ footer {
   font-size: 0.9em;
   color: var(--theme-text);
 }
+
+@media (max-width: 500px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
