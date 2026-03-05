@@ -119,6 +119,12 @@ h3 {
   color: var(--theme-lightblue);
 }
 
+@media (max-width: 1150px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
 @media (max-width: 900px) {
   .projects-grid {
     grid-template-columns: repeat(2, 300px);
@@ -130,7 +136,7 @@ h3 {
     height: 200px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .projects-grid {
     grid-template-columns: 280px;
     gap: 15px;
@@ -143,10 +149,5 @@ h3 {
 
   .project-card img {
     height: 150px;
-  }
-}
-@media (max-width: 1150px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 300px);
   }
 }
