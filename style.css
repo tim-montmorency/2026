@@ -5,6 +5,14 @@
   --theme-lightblue: #9bb3d9;
 }
 
+@font-face {
+  src: url("./medias/Aileron-Regular.otf") format("opentype");
+  font-family: "aileron-regular";
+}
+@font-face {
+  src: url("./medias/Aileron-Heavy.otf") format("opentype");
+  font-family: "aileron-semibold";
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +22,6 @@
 body {
   background-color: var(--theme-background);
   color: var(--theme-text);
-  font-family: Arial, sans-serif;
   padding: 40px 20px;
 }
 
@@ -86,6 +93,7 @@ footer {
   border-top: 1px solid #444;
   font-size: 0.9em;
   color: var(--theme-text);
+  font-family: "aileron-semibold";
 }
 
 .background-video {
@@ -101,6 +109,8 @@ h3 {
   text-align: center;
   margin-top: 48px;
   font-size: clamp(1.2em, 2.4vw, 2.5em);
+  font-family: "aileron-semibold", Arial, sans-serif;
+  letter-spacing: 0.02rem;
 }
 .logo {
   display: block;
@@ -113,6 +123,7 @@ h3 {
   margin: 40px auto;
   text-align: center;
   font-size: clamp(1em, 2vw, 1.8em);
+  font-family: "aileron-regular", Arial, sans-serif;
 }
 .texte-special {
   font-weight: bold;
