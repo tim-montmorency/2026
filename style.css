@@ -99,8 +99,8 @@ footer {
 }
 h3 {
   text-align: center;
-  margin-top: 20px;
-  font-size: 1.9em;
+  margin-top: 48px;
+  font-size: clamp(1.2em, 2.4vw, 2.5em);
 }
 .logo {
   display: block;
@@ -110,9 +110,9 @@ h3 {
 
 .description {
   max-width: 1000px;
-  margin: 20px auto;
+  margin: 40px auto;
   text-align: center;
-  font-size: 1.6em;
+  font-size: clamp(1em, 2vw, 1.8em);
 }
 .texte-special {
   font-weight: bold;
