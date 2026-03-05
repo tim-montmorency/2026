@@ -54,7 +54,7 @@ h2 {
 .project-card {
   text-decoration: none;
   color: var(--theme-text);
-  border: 2px solid #444;
+  border: 2px solid var(--theme-darkblue);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -77,7 +77,7 @@ h2 {
 }
 
 .project-card p {
-  background-color: var(--theme-text);
+  background-color: var(--theme-lightblue);
   color: var(--theme-background);
   text-align: center;
   font-family: "aileron-semibold", Arial, sans-serif;
@@ -92,7 +92,7 @@ footer {
   text-align: center;
   padding: 40px 20px;
   margin-top: 60px;
-  border-top: 1px solid #444;
+  border-top: 1px solid var(--theme-darkblue);
   font-size: 0.9em;
   color: var(--theme-text);
   font-family: "aileron-semibold";
