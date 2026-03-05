@@ -59,7 +59,7 @@ h2 {
 
 .project-card img {
   width: 100%;
-  height: auto;
+  height: 200px;
   object-fit: cover;
   display: block;
   transition: transform 3s ease;
@@ -125,17 +125,6 @@ h3 {
   }
 }
 
-@media (max-width: 900px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 300px);
-    gap: 20px;
-    justify-content: center;
-  }
-
-  .project-card img {
-    height: 200px;
-  }
-}
 @media (max-width: 650px) {
   .projects-grid {
     grid-template-columns: 280px;
