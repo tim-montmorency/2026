@@ -80,6 +80,8 @@ h2 {
   background-color: var(--theme-text);
   color: var(--theme-background);
   text-align: center;
+  font-family: "aileron-semibold", Arial, sans-serif;
+  letter-spacing: 0.02rem;
   font-size: 1.1em;
   font-weight: bold;
   padding: 15px;
