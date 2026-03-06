@@ -1,5 +1,5 @@
 :root {
-  --theme-background: #070707;
+  --theme-background: #000000;
   --theme-text: #ffffff;
   --theme-darkblue: #223659;
   --theme-lightblue: #9bb3d9;
@@ -30,7 +30,6 @@ main {
   margin: 0 auto;
 }
 
-
 h1 {
   text-align: center;
   margin-top: 48px;
@@ -41,6 +40,14 @@ h1 {
 a {
   color: var(--theme-lightblue);
 }
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 24px auto;
+  text-align: center;
+  font-size: clamp(1em, 2vw, 1.5em);
+  font-family: "aileron-regular", Arial, sans-serif;
+}
 
 .projects-grid {
   display: grid;
@@ -50,7 +57,19 @@ a {
   justify-content: center;
   max-width: 100%;
 }
-
+.entree {
+  font-size: clamp(1.7em, 0.9em, 2.2em);
+  color: var(--theme-lightblue);
+  font-family: "aileron-semibold", Arial, sans-serif;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.logo-exposition {
+  display: block;
+  margin: 30px auto 0 auto;
+  width: clamp(100px, 50%, 300px);
+}
 .project-card {
   text-decoration: none;
   color: var(--theme-text);
@@ -124,6 +143,7 @@ footer {
 .texte-special {
   font-weight: bold;
   color: var(--theme-lightblue);
+  letter-spacing: 0.08rem;
 }
 
 @media (max-width: 1150px) {
