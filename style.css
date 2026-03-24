@@ -49,14 +49,7 @@ ul {
   font-family: "aileron-regular", Arial, sans-serif;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 350px);
-  gap: 30px;
-  margin: 20px;
-  justify-content: center;
-  max-width: 100%;
-}
+
 .entree {
   font-size: clamp(1.7em, 0.9em, 2.2em);
   color: var(--theme-lightblue);
@@ -79,49 +72,13 @@ ul {
   border: 2px solid var(--theme-darkblue);
 }
 
-.project-card {
-  text-decoration: none;
-  color: var(--theme-text);
-  border: 2px solid var(--theme-darkblue);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-card:hover {
-  transform: none;
-}
-
-.project-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-  transition: transform 3s ease;
-}
-
-.project-card:hover img {
-  transform: scale(1.05);
-}
-
-.project-card p {
-  background-color: var(--theme-lightblue);
-  color: var(--theme-darkblue);
-  text-align: center;
-  font-family: "aileron-semibold", Arial, sans-serif;
-
-  font-size: 1.1em;
-  font-weight: bold;
-  padding: 15px;
-  margin: 0;
-}
 
 footer {
   text-align: center;
   padding: 40px 20px;
   margin-top: 60px;
   border-top: 1px solid var(--theme-darkblue);
-  font-size: clamp(1.2em, 0.9em, 1.6em);
+  font-size: clamp(1em, 0.9em, 1em);
   color: var(--theme-text);
   font-family: "aileron-regular";
 }
@@ -156,24 +113,49 @@ footer {
   letter-spacing: 0.08rem;
 }
 
-@media (max-width: 1150px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 300px);
-  }
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 20px;
+  justify-content: center;
 }
 
-@media (max-width: 650px) {
-  .projects-grid {
-    grid-template-columns: 280px;
-    gap: 15px;
-    justify-content: center;
-  }
+.project-card {
+  border: 2px solid var(--theme-darkblue);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--theme-background);
+  transition: transform 0.3s ease;
+}
 
-  .project-card {
-    width: 280px;
-  }
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
 
-  .project-card img {
-    height: 150px;
-  }
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around; /* spreads links across the width */
+  padding: 15px;
+  background-color: var(--theme-lightblue);
+}
+
+.project-links a {
+  font-family: "aileron-regular", Arial, sans-serif;
+  color: var(--theme-darkblue);
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
 }
