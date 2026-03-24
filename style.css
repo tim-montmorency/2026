@@ -115,19 +115,20 @@ footer {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* flexible columns */
   gap: 30px;
-  margin: 20px;
-  justify-content: center;
+  max-width: 1200px;    /* optional, keeps grid from stretching too far */
+  margin: 0 auto;       /* center the grid */
 }
 
 .project-card {
+  width: 100%;           /* fill the grid column */
+  max-width: 350px;      /* prevent stretching on huge screens */
   border: 2px solid var(--theme-darkblue);
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  background-color: var(--theme-background);
-  transition: transform 0.3s ease;
+  overflow: hidden;
+  margin: 0 auto;        /* ensures last row is centered */
 }
 
 .project-card img {
